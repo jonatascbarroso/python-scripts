@@ -2,7 +2,7 @@
 
 Useful Python scripts to help us with little things.
 
-## [Base64 Decode](https://github.com/jonatascbarroso/python-scripts/base64-decode/base64-decode.py)
+## [Base64 Decode](https://github.com/jonatascbarroso/python-scripts/tree/master/base64-decode)
 
 This script decode a base64 file.
 
