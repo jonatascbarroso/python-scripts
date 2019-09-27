@@ -1,5 +1,5 @@
 '''
-This script decode a base64 file
+This script is used to decode a base64 file
 '''
 
 import base64
