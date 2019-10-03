@@ -2,16 +2,8 @@
 
 Useful Python scripts to help us with little things.
 
-## [Base64 Decode](https://github.com/jonatascbarroso/python-scripts/tree/master/base64-decode)
+* [Base64 Decode](https://github.com/jonatascbarroso/python-scripts/tree/master/base64-decode):
+decode a base64 file.
 
-This script is used to decode a base64 file.
-
-```
-$ base64-decode.py
-
-Base64 file to be decoded? encoded.pdf
-Output file? decoded.pdf
-Done
-```
-
-* [Performance Test](https://github.com/jonatascbarroso/python-scripts/tree/master/performance-test)
+* [Performance Test](https://github.com/jonatascbarroso/python-scripts/tree/master/performance-test):
+perform load, stress and performance tests on an API.
