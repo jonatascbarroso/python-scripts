@@ -38,6 +38,7 @@ optional arguments:
 
 ```
 $ performance-test.py -u http://localhost:8080 -r 3 -w 2
+
 ---------------
 Starting requests...
 2019-10-03 08:41:32.386676
