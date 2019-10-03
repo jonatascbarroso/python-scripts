@@ -16,7 +16,7 @@ Done
 
 ## [Performance Test](https://github.com/jonatascbarroso/python-scripts/tree/master/performance-test)
 
-This script is used to perform performance tests on an API.
+This script is used to perform load, stress and performance tests on an API.
 
 ```
 $ performance-test.py
