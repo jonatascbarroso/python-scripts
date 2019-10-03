@@ -7,6 +7,7 @@ import concurrent.futures
 import requests
 import json
 import os
+import argparse
 from datetime import datetime
 from time import sleep
 
@@ -63,11 +64,21 @@ async def main():
         for response in await asyncio.gather(*futures):
             pass
 
+class Args:
+    pass
+args = Args()
 
-# Questions
-url = input('What is the URL (http address)? ')
-requestsNumber = int(input('How many requests? '))
-workers = int(input('How many workers? '))
+parser = argparse.ArgumentParser(description='Perform load, stress and performance tests on an API.')
+
+parser.add_argument('-u', '--url', default='http://localhost', dest='url', help='URL to be called. Default: http://localhost')
+parser.add_argument('-r', '--requests', type=int, default=1, dest='requests', help='How many requests will be made. Default: 1')
+parser.add_argument('-w', '--workers', type=int, default=1, dest='workers', help='How many works will act. Default: 1')
+
+args = parser.parse_args(namespace=args)
+
+url = args.url
+requestsNumber = args.requests
+workers = args.workers
 
 errors = 0
 
@@ -93,6 +104,7 @@ print_line()
 print(f'Start time: {startTime}')
 print(f'URL: {url}')
 print(f'Requests: {requestsNumber}')
+print(f'Workers: {workers}')
 print(f'Total time: {totalTime}')
 print(f'Mean time: {meanTime}')
 print(f'Error requests: {errors}')
