@@ -1,5 +1,5 @@
 '''
-This script is used to perform performance tests on an API
+This script is used to perform load, stress and performance tests on an API.
 '''
 
 import asyncio
